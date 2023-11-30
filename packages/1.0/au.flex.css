@@ -1,64 +1,81 @@
 /* FLEX STYLES */
 
 /* container (parent of flex items) */
-.flex-container{
+.au.flex-container,
+[data-au~="flex-container"]{
   display:flex;
   flex-direction:row;
 }
-.flex-vertical{
+.au.flex-vertical,
+[data-au~="flex-vertical"]{
   flex-direction: column;
 }
-.flex-horizontal{
+.au.flex-horizontal,
+[data-au~="flex-horizontal"]{
   flex-direction: row;
 }
-.flex-wrap{
+.au.flex-wrap,
+[data-au~="flex-wrap"]{
   flex-wrap: wrap;
 }
 
 /* align styles */
-.align-top{
+.au.align-top,
+[data-au~="align-top"]{
   align-items: flex-start;
 }
-.align-center{
+.au.align-center,
+[data-au~="align-center"]{
   align-items: center;
 }
-.align-base{
+.au.align-base,
+[data-au~="align-base"]{
   align-items: baseline;
 }
-.align-bottom{
+.au.align-bottom,
+[data-au~="align-bottom"]{
   align-items: flex-end;
 }
 
 /* justify styles */
-.justify-left{
+.au.justify-left,
+[data-au~="justify-left"]{
   justify-content: flex-start;
 }
-.justify-center{
+.au.justify-center,
+[data-au~="justify-center"]{
   justify-content: center;
 }
-.justify-right{
+.au.justify-right,
+[data-au~="justify-right"]{
   justify-content: flex-end;
 }
-.space-between{
+.au.space-between,
+[data-au~="space-between"]{
 	justify-content: space-between;
 }
-.space-around{
+.au.space-around,
+[data-au~="space-around"]{
 	justify-content: space-around;
 }
 
 /* text alignment styles */
-.text-right{
+.au.text-right,
+[data-au~="text-right"]{
 	text-align:right;
 }
-.text-left{
+.au.text-left,
+[data-au~="text-left"]{
 	text-align:left;
 }
-.text-center{
+.au.text-center,
+[data-au~="text-center"]{
 	text-align:center;
 }
 
 /* center everything */
-.all-center{
+.au.all-center,
+[data-au~="all-center"]{
   align-items:center;
   justify-content:center;
 }
@@ -67,24 +84,29 @@
 /* *********************** */
 
 /* flex items */
-.flex-width{
+.au.flex-width,
+[data-au~="flex-width"]{
   flex:auto;
   width:100%;
 }
-.flex-height{
+.au.flex-height,
+[data-au~="flex-height"]{
   flex:auto;
   height:100%;
 }
-.set-width{
+.au.set-width,
+[data-au~="set-width"]{
   flex:none;
 }
 
 /* align self styles */
-.align-self-top{
+.au.align-self-top,
+[data-au~="align-self-top"]{
 	align-self:
 	flex-start;
 }
-.align-self-bottom{
+.au.align-self-bottom,
+[data-au~="align-self-bottom"]{
 	align-self:flex-end;
 }
 /* *********************** */
