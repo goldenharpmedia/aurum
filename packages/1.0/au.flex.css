@@ -1,4 +1,4 @@
-/* FLEX STYLES */
+/* <BEGIN> AURUM FLEX STYLES */
 
 /* container (parent of flex items) */
 .au.flex-container,
@@ -109,5 +109,8 @@
 [data-au~="align-self-bottom"]{
 	align-self:flex-end;
 }
+/* *********************** */
+/* *********************** */
+/* <END> AURUM FLEX STYLES */
 /* *********************** */
 /* *********************** */
