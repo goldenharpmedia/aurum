@@ -35,11 +35,15 @@ code{
 }
 code{
   padding:0 5px;
+  white-space: nowrap;
+  border-radius:2px;
 }
 pre code{
   display:block;
   padding: 20px;
   line-height:1.1;
+  white-space: break-spaces;
+  overflow:auto;
 }
 
 /* universal classes */
