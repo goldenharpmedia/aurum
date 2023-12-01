@@ -161,6 +161,10 @@ pre code{
 [data-au~="set-width"]{
   flex:none;
 }
+.au.set-height,
+[data-au~="set-height"]{
+  flex:none;
+}
 
 /* align self styles */
 .au.align-self-top,
