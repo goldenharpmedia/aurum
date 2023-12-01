@@ -41,7 +41,7 @@ readmeHTML = markdown.markdown(readmeMarkdown, extensions = ['fenced_code'], tab
 destinationLines.insert(beginTarget, readmeHTML)
 
 # write to destination html file
-with open('index.html', 'w', encoding="utf8") as f:
+with open(targetFile, 'w', encoding="utf8") as f:
   destinationLines = "".join(destinationLines)
   f.write(destinationLines)
   print("README content copied into " + targetFile)
