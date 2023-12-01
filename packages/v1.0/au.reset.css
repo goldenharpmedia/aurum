@@ -43,6 +43,7 @@ pre code{
   padding: 20px;
   line-height:1.1;
   white-space: break-spaces;
+  overflow:auto;
 }
 
 /* universal classes */
