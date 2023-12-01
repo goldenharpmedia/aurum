@@ -53,7 +53,7 @@ Flex styles can be used within your project in two ways. One is by referencing a
 </div>
 ```
 
-For a full list of selectors that can be used, please see the [`au.flex.css` file](./packages/1.0/au.flex.css).
+For a full list of selectors that can be used, please see the `au.flex.css` [file](./packages/1.0/au.flex.css).
 
 #### Grid Styles coming soon.
 

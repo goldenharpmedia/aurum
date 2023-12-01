@@ -44,6 +44,50 @@
         <!-- To edit, make edits in README.md, and run the readme-build.py file -->
         <!-- README content inserted here -->
         <section data-readme-marker>
+<h1>The Aurum Framework</h1>
+<p>The lightest, most necessary CSS Framework known to ~~man~~ humans. No pre-determined styles, no components - just flex layouts, grids, and necessary styles everyone needs (or could sure use). Perfect for those who are new to CSS Flexbox and learning the ropes, CSS veterans that are tired of constantly writing <code>display: flex</code>, and even those that just want a vanilla foundation to build their CSS on.</p>
+<p>Aurum is from the latin word for gold (you may be familiar with the symbol 'Au' on the periodic table?). Sure, it's a nod to us at Golden Harp Media, but also respective to what the framework is.</p>
+<p><br></p>
+<h2>Setting Up</h2>
+<p>Simply fork this repo to include your own version in your project (and to make changes if you wish), or reference one of the following URLs to access it as a hosted resource:</p>
+<pre><code>&lt;head&gt;
+
+  &lt;!-- just the CSS Reset --&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; src=&quot;https://au.goldenharpmedia.com/packages/1.0/au.reset.css&quot;&gt;
+
+  &lt;!-- just the Flex Styles --&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; src=&quot;https://au.goldenharpmedia.com/packages/1.0/au.flex.css&quot;&gt;
+
+  &lt;!-- both the CSS Reset &amp; Flex Styles --&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; src=&quot;https://au.goldenharpmedia.com/packages/1.0/au.css&quot;&gt;
+
+  &lt;!-- other links --&gt;
+
+&lt;/head&gt;
+</code></pre>
+<p>If you are using both, we recommend using the combination file (for minimal requests and faster loads). We also recommend including these links at the top of your <code>&lt;head&gt;</code> section (or at least, before other CSS).</p>
+<p><br></p>
+<h2>How it Works</h2>
+<p>The <em>Reset</em> works automatically on page load, but <em>Flex</em> styles need to be referenced for each element.</p>
+<h3>Flex Styles</h3>
+<p>Flex styles can be used within your project in two ways. One is by referencing a flex class, while another is by using a custom HTML attribute (in case you are already dealing with plenty of CSS classes).</p>
+<pre><code>&lt;!-- Example: Using a class --&gt;
+&lt;div class=&quot;myParentClass au flex-container&quot;&gt;
+  &lt;div class=&quot;myFirstChildClass myChildClass au flex-width&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;mySecondChildClass myChildClass au set-width&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Example: Using a custom HTML attribute --&gt;
+&lt;div data-au=&quot;flex-container&quot; class=&quot;myParentClass&quot;&gt;
+  &lt;div data-au=&quot;flex-width&quot; class=&quot;myFirstChildClass myChildClass&quot;&gt;&lt;/div&gt;
+  &lt;div data-au=&quot;set-width&quot; class=&quot;mySecondChildClass myChildClass&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>For a full list of selectors that can be used, please see the <code>au.flex.css</code> <a href="./packages/1.0/au.flex.css">file</a>.</p>
+<h4>Grid Styles coming soon.</h4>
+<p><br></p>
+<h2>Resources</h2>
+<p>Have a question? Something not working? Short of providing IT Support on your implementation, we're here to help! Reach out through our <a href="https://goldenharpmedia.com">website</a>, or by opening an issue through GitHub.</p>
 
         </section>
       </div>
