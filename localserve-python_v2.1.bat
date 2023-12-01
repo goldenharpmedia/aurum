@@ -1,5 +1,5 @@
 @ECHO OFF
-:: v2.0
+:: v2.1
 :: to execute as expected, requires python 3.x
 
 :start
@@ -17,8 +17,8 @@ goto start
 
 :no
 echo Skipped...
-clear
-GOTO
+cls
+GOTO startServer
 
 :yes
 echo Opening browser...
