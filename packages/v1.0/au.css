@@ -61,24 +61,29 @@ pre code{
 /* <END> AURUM CSS RESET */
 /* *********************** */
 /* *********************** */
+
 /* <BEGIN> AURUM FLEX STYLES */
 
 /* container (parent of flex items) */
 .au.flex-container,
-[data-au~="flex-container"]{
+[data-au~="flex-container"],
+[data-au~="container"]{
   display:flex;
   flex-direction:row;
 }
 .au.flex-vertical,
-[data-au~="flex-vertical"]{
+[data-au~="flex-vertical"],
+[data-au~="dir-vertical"]{
   flex-direction: column;
 }
 .au.flex-horizontal,
-[data-au~="flex-horizontal"]{
+[data-au~="flex-horizontal"],
+[data-au~="dir-vertical"]{
   flex-direction: row;
 }
 .au.flex-wrap,
-[data-au~="flex-wrap"]{
+[data-au~="flex-wrap"],
+[data-au~="attr-wrap"]{
   flex-wrap: wrap;
 }
 
@@ -169,8 +174,7 @@ pre code{
 /* align self styles */
 .au.align-self-top,
 [data-au~="align-self-top"]{
-	align-self:
-	flex-start;
+	align-self:flex-start;
 }
 .au.align-self-bottom,
 [data-au~="align-self-bottom"]{
@@ -181,3 +185,4 @@ pre code{
 /* <END> AURUM FLEX STYLES */
 /* *********************** */
 /* *********************** */
+

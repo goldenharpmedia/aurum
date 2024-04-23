@@ -19,7 +19,7 @@ Simply fork this repo to include your own version in your project (and to make c
   <!-- just the Flex Styles -->
   <link rel="stylesheet" type="text/css" src="https://au.goldenharpmedia.com/packages/1.0/au.flex.css">
 
-  <!-- both the CSS Reset & Flex Styles -->
+  <!-- both the CSS Reset & Flex Styles (one file is one less request!) -->
   <link rel="stylesheet" type="text/css" src="https://au.goldenharpmedia.com/packages/1.0/au.css">
 
   <!-- other links -->
@@ -41,13 +41,13 @@ Flex styles can be used within your project in two ways. One is by referencing a
 
 ```
 <!-- Example: Using a class -->
-<div class="myParentClass au flex-container">
+<div class="myParentClass au container">
   <div class="myFirstChildClass myChildClass au flex-width"></div>
   <div class="mySecondChildClass myChildClass au set-width"></div>
 </div>
 
 <!-- Example: Using a custom HTML attribute -->
-<div data-au="flex-container" class="myParentClass">
+<div data-au="container" class="myParentClass">
   <div data-au="flex-width" class="myFirstChildClass myChildClass"></div>
   <div data-au="set-width" class="mySecondChildClass myChildClass"></div>
 </div>
