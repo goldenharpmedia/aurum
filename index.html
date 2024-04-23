@@ -56,7 +56,7 @@
   &lt;!-- just the Flex Styles --&gt;
   &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; src=&quot;https://au.goldenharpmedia.com/packages/1.0/au.flex.css&quot;&gt;
 
-  &lt;!-- both the CSS Reset &amp; Flex Styles --&gt;
+  &lt;!-- both the CSS Reset &amp; Flex Styles (one file is one less request!) --&gt;
   &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; src=&quot;https://au.goldenharpmedia.com/packages/1.0/au.css&quot;&gt;
 
   &lt;!-- other links --&gt;
@@ -70,13 +70,13 @@
 <h3>Flex Styles</h3>
 <p>Flex styles can be used within your project in two ways. One is by referencing a flex class, while another is by using a custom HTML attribute (in case you are already dealing with plenty of CSS classes).</p>
 <pre><code>&lt;!-- Example: Using a class --&gt;
-&lt;div class=&quot;myParentClass au flex-container&quot;&gt;
+&lt;div class=&quot;myParentClass au container&quot;&gt;
   &lt;div class=&quot;myFirstChildClass myChildClass au flex-width&quot;&gt;&lt;/div&gt;
   &lt;div class=&quot;mySecondChildClass myChildClass au set-width&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;!-- Example: Using a custom HTML attribute --&gt;
-&lt;div data-au=&quot;flex-container&quot; class=&quot;myParentClass&quot;&gt;
+&lt;div data-au=&quot;container&quot; class=&quot;myParentClass&quot;&gt;
   &lt;div data-au=&quot;flex-width&quot; class=&quot;myFirstChildClass myChildClass&quot;&gt;&lt;/div&gt;
   &lt;div data-au=&quot;set-width&quot; class=&quot;mySecondChildClass myChildClass&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
