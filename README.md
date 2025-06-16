@@ -14,13 +14,13 @@ Simply fork this repo to include your own version in your project (and to make c
 <head>
 
   <!-- just the CSS Reset -->
-  <link rel="stylesheet" type="text/css" src="https://au.goldenharpmedia.com/packages/1.0/au.reset.css">
+  <link rel="stylesheet" type="text/css" href="https://au.goldenharpmedia.com/framework/packages/v1.0/au.reset.css">
 
   <!-- just the Flex Styles -->
-  <link rel="stylesheet" type="text/css" src="https://au.goldenharpmedia.com/packages/1.0/au.flex.css">
+  <link rel="stylesheet" type="text/css" href="https://au.goldenharpmedia.com/framework/packages/v1.0/au.flex.css">
 
   <!-- both the CSS Reset & Flex Styles (one file is one less request!) -->
-  <link rel="stylesheet" type="text/css" src="https://au.goldenharpmedia.com/packages/1.0/au.css">
+  <link rel="stylesheet" type="text/css" href="https://au.goldenharpmedia.com/framework/packages/v1.0/au.css">
 
   <!-- other links -->
 
@@ -40,16 +40,16 @@ The *Reset* works automatically on page load, but *Flex* styles need to be refer
 Flex styles can be used within your project in two ways. One is by referencing a flex class, while another is by using a custom HTML attribute (in case you are already dealing with plenty of CSS classes).
 
 ```
+<!-- Example: Using a custom HTML attribute (PREFERRED) -->
+<div data-au="container" class="myParentClass">
+  <div data-au="flex-width" class="myFirstChildClass myChildClass"></div>
+  <div data-au="set-width" class="mySecondChildClass myChildClass"></div>
+</div>
+
 <!-- Example: Using a class -->
 <div class="myParentClass au container">
   <div class="myFirstChildClass myChildClass au flex-width"></div>
   <div class="mySecondChildClass myChildClass au set-width"></div>
-</div>
-
-<!-- Example: Using a custom HTML attribute -->
-<div data-au="container" class="myParentClass">
-  <div data-au="flex-width" class="myFirstChildClass myChildClass"></div>
-  <div data-au="set-width" class="mySecondChildClass myChildClass"></div>
 </div>
 ```
 
