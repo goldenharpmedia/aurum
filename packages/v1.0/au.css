@@ -163,11 +163,10 @@ pre code{
   height:100%;
 }
 .au.set-width,
-[data-au~="set-width"]{
-  flex:none;
-}
+[data-au~="set-width"],
 .au.set-height,
-[data-au~="set-height"]{
+[data-au~="set-height"],
+[data-au~="set"]{
   flex:none;
 }
 
