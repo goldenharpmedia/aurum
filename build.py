@@ -69,7 +69,7 @@ def build_combine_css():
   # make the 'take from' file names from some kind of array??
     # just repeat the process for all files inside the array?
 
-  fileNames = ["au.reset.css", "au.flex.css"]
+  fileNames = ["au.reset.css", "au.normalize.css", "au.flex.css"]
 
   for x in fileNames:
     fileSrc = root_dir / "packages" / targetVersion / x
