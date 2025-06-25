@@ -6,6 +6,12 @@ Aurum is from the latin word for gold (you may be familiar with the symbol 'Au' 
 
 <br>
 
+## Contributing
+
+If you would like to contribute to Aurum, please fork the `main` branch, make your changes, and then create a pull request to merge the new branch into `main`. All changes will be reviewed by our team, so be sure to review before submitting.
+
+NOTE: This repository is for the framework itself. This framework is hosted as part of the Aurum website (`root` of this repo correlates to [au.goldenharpmedia.com/framework](https://au.goldenharpmedia.com/framework)). To make contributions to the Aurum website, please visit the [Aurum Website repository](https://github.com/goldenharpmedia/aurum-website).
+
 ## Setting Up
 
 Simply fork this repo to include your own version in your project (and to make changes if you wish), or reference one of the following URLs to access it as a hosted resource:
@@ -16,10 +22,13 @@ Simply fork this repo to include your own version in your project (and to make c
   <!-- just the CSS Reset -->
   <link rel="stylesheet" type="text/css" href="https://au.goldenharpmedia.com/framework/packages/v1.0/au.reset.css">
 
+  <!-- just the CSS Normalize Styles -->
+  <link rel="stylesheet" type="text/css" href="https://au.goldenharpmedia.com/framework/packages/v1.0/au.reset.css">
+
   <!-- just the Flex Styles -->
   <link rel="stylesheet" type="text/css" href="https://au.goldenharpmedia.com/framework/packages/v1.0/au.flex.css">
 
-  <!-- both the CSS Reset & Flex Styles (one file is one less request!) -->
+  <!-- all files above (one file limits request!) -->
   <link rel="stylesheet" type="text/css" href="https://au.goldenharpmedia.com/framework/packages/v1.0/au.css">
 
   <!-- other links -->
@@ -27,7 +36,7 @@ Simply fork this repo to include your own version in your project (and to make c
 </head>
 ```
 
-If you are using both, we recommend using the combination file (for minimal requests and faster loads). We also recommend including these links at the top of your `<head>` section (or at least, before other CSS).
+We recommend using the combination file for minimal requests and faster load times. We also recommend including these links at the top of your `<head>` section (or at least, before other CSS) so your CSS isn't overwritten.
 
 <br>
 

@@ -46,6 +46,9 @@
 <p>The lightest, most necessary CSS Framework known to ~~man~~ humans. No pre-determined styles, no components - just flex layouts, grids, and necessary styles everyone needs (or could sure use). Perfect for those who are new to CSS Flexbox and learning the ropes, CSS veterans that are tired of constantly writing <code>display: flex</code>, and even those that just want a vanilla foundation to build their CSS on.</p>
 <p>Aurum is from the latin word for gold (you may be familiar with the symbol 'Au' on the periodic table?). Sure, it's a nod to us at Golden Harp Media, but also respective to what the framework is.</p>
 <p><br></p>
+<h2>Contributing</h2>
+<p>If you would like to contribute to Aurum, please fork the <code>main</code> branch, make your changes, and then create a pull request to merge the new branch into <code>main</code>. All changes will be reviewed by our team, so be sure to review before submitting.</p>
+<p>NOTE: This repository is for the framework itself. This framework is hosted as part of the Aurum website (<code>root</code> of this repo correlates to <a href="https://au.goldenharpmedia.com/framework">au.goldenharpmedia.com/framework</a>). To make contributions to the Aurum website, please visit the <a href="https://github.com/goldenharpmedia/aurum-website">Aurum Website repository</a>.</p>
 <h2>Setting Up</h2>
 <p>Simply fork this repo to include your own version in your project (and to make changes if you wish), or reference one of the following URLs to access it as a hosted resource:</p>
 <pre><code>&lt;head&gt;
@@ -53,17 +56,20 @@
   &lt;!-- just the CSS Reset --&gt;
   &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://au.goldenharpmedia.com/framework/packages/v1.0/au.reset.css&quot;&gt;
 
+  &lt;!-- just the CSS Normalize Styles --&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://au.goldenharpmedia.com/framework/packages/v1.0/au.reset.css&quot;&gt;
+
   &lt;!-- just the Flex Styles --&gt;
   &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://au.goldenharpmedia.com/framework/packages/v1.0/au.flex.css&quot;&gt;
 
-  &lt;!-- both the CSS Reset &amp; Flex Styles (one file is one less request!) --&gt;
+  &lt;!-- all files above (one file limits request!) --&gt;
   &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://au.goldenharpmedia.com/framework/packages/v1.0/au.css&quot;&gt;
 
   &lt;!-- other links --&gt;
 
 &lt;/head&gt;
 </code></pre>
-<p>If you are using both, we recommend using the combination file (for minimal requests and faster loads). We also recommend including these links at the top of your <code>&lt;head&gt;</code> section (or at least, before other CSS).</p>
+<p>We recommend using the combination file for minimal requests and faster load times. We also recommend including these links at the top of your <code>&lt;head&gt;</code> section (or at least, before other CSS) so your CSS isn't overwritten.</p>
 <p><br></p>
 <h2>How it Works</h2>
 <p>The <em>Reset</em> works automatically on page load, but <em>Flex</em> styles need to be referenced for each element.</p>
