@@ -1,9 +1,10 @@
 /* <BEGIN> AURUM CSS RESET */
 
-*{
+*,
+*:before,
+*:after{
   padding:0;
   margin:0;
-  /* background-color:transparent; */
   box-sizing:border-box;
   background-size:contain;
   background-position:center;
@@ -17,52 +18,6 @@
 /* *********************** */
 
 
-/* native elements */
-/* code */
-pre,
-code{
-  font-family:monospace;
-}
-code{
-  padding:0 5px;
-  white-space: nowrap;
-  border-radius:2px;
-}
-pre code{
-  display:block;
-  padding: 20px;
-  line-height:1.1;
-  white-space: break-spaces;
-  overflow:auto;
-}
-/* other elements */
-p{
-  text-wrap:pretty;
-}
-table{
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* universal classes */
-.hide,
-[hidden]{
-  display:none;
-}
-.show{
-  display:block;
-}
-.show.au.flex-container,
-.show[data-au~="flex-container"],
-.show[data-au~="container"]{
-  display:flex;
-}
-.clickable{
-  cursor:pointer;
-}
-.no-click{
-	pointer-events:none;
-}
 /* *********************** */
 /* *********************** */
 /* <END> AURUM CSS RESET */
