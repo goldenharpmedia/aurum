@@ -60,6 +60,9 @@ table{
 .clickable{
   cursor:pointer;
 }
+.no-click{
+	pointer-events:none;
+}
 /* *********************** */
 /* *********************** */
 /* <END> AURUM CSS RESET */
