@@ -69,6 +69,16 @@ pre code{
   overflow:auto;
 }
 
+:placeholder{
+  color:rgba(255,255,255,.5);
+}
+::-webkit-input-placeholder{
+  color:rgba(255,255,255,.5);
+}
+::-moz-placeholder{
+  color:rgba(255,255,255,.5);
+}
+
 /* universal classes */
 .hide,
 [hidden]{
