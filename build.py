@@ -60,7 +60,7 @@ def build_combine_css():
 
   # create initial variable values
   targetFile = "au.css"
-  targetVersion = "v1.0"
+  targetVersion = "v1.1"
   targetSrc = root_dir / "packages" / targetVersion / targetFile
 
   # delete current contents of the css file
@@ -86,6 +86,7 @@ def build_combine_css():
       f.write("\n\n")
 
   print("Finished Combined CSS build!")
+  user_input = input("Enter something and press Enter: ")
 
 
 # actually call functions
