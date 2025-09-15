@@ -1,0 +1,263 @@
+/* <BEGIN> AURUM CSS RESET */
+
+*,
+*:before,
+*:after{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  background-size:contain;
+  background-position:center;
+	background-repeat:no-repeat;
+	scroll-behavior: inherit;
+  font-family:inherit;
+  -webkit-tap-highlight-color: transparent;
+  border-style: none;
+  /* font-size:inherit; */
+}
+/* *********************** */
+/* *********************** */
+
+
+/* *********************** */
+/* *********************** */
+/* <END> AURUM CSS RESET */
+/* *********************** */
+/* *********************** */
+
+
+/* <BEGIN> AURUM CSS NORMALIZE */
+
+/* page elements */
+html{
+	scroll-behavior: smooth;
+}
+body{
+	cursor:default;
+}
+/* *********************** */
+/* *********************** */
+
+
+/* native elements */
+svg{
+  width:100%;
+  height:100%;
+	fill:currentColor;
+}
+p{
+  text-wrap:pretty;
+}
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* code */
+pre,
+code,
+.code-text{
+  font-family:monospace;
+}
+code{
+  padding:0 5px;
+  white-space: nowrap;
+  border-radius:2px;
+}
+pre code{
+  display:block;
+  padding: 20px;
+  line-height:1.1;
+  white-space: break-spaces;
+  overflow:auto;
+}
+
+:placeholder{
+  color:rgba(255,255,255,.5);
+}
+::-webkit-input-placeholder{
+  color:rgba(255,255,255,.5);
+}
+::-moz-placeholder{
+  color:rgba(255,255,255,.5);
+}
+
+/* universal classes */
+.hide,
+[hidden]{
+  display:none;
+}
+.show{
+  display:block;
+}
+.show.au.flex-container,
+.show[data-au~="flex-container"],
+.show[data-au~="container"]{
+  display:flex;
+}
+
+.clickable{
+  cursor:pointer;
+}
+.no-click{
+	pointer-events:none;
+}
+s,
+del,
+.strikethru{
+  text-decoration: line-through;
+  /* you were doing too much duu */
+  /* display:inline-block;
+  position:relative; */
+}
+/* line that creates the strikethru */
+/* .strikethru:after{
+  content: "";
+  display: block;
+  width: 120%;
+  height: .25em;
+  background-color: currentColor;
+  position: absolute;
+  top: .5em;
+  left: -10%;
+} */
+
+.sr-only{
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  white-space:nowrap;
+  border:0;
+}
+/* *********************** */
+/* *********************** */
+/* <END> AURUM CSS NORMALIZE */
+/* *********************** */
+/* *********************** */
+
+/* <BEGIN> AURUM FLEX STYLES */
+
+/* container (parent of flex items) */
+.au.flex-container,
+[data-au~="flex-container"],
+[data-au~="container"]{
+  display:flex;
+  flex-direction:row;
+}
+.au.flex-vertical,
+[data-au~="flex-vertical"],
+[data-au~="dir-vertical"]{
+  flex-direction: column;
+}
+.au.flex-horizontal,
+[data-au~="flex-horizontal"],
+[data-au~="dir-vertical"]{
+  flex-direction: row;
+}
+.au.flex-wrap,
+[data-au~="flex-wrap"],
+[data-au~="attr-wrap"]{
+  flex-wrap: wrap;
+}
+
+/* align styles */
+.au.align-top,
+[data-au~="align-top"]{
+  align-items: flex-start;
+}
+.au.align-center,
+[data-au~="align-center"]{
+  align-items: center;
+}
+.au.align-base,
+[data-au~="align-base"]{
+  align-items: baseline;
+}
+.au.align-bottom,
+[data-au~="align-bottom"]{
+  align-items: flex-end;
+}
+
+/* justify styles */
+.au.justify-left,
+[data-au~="justify-left"]{
+  justify-content: flex-start;
+}
+.au.justify-center,
+[data-au~="justify-center"]{
+  justify-content: center;
+}
+.au.justify-right,
+[data-au~="justify-right"]{
+  justify-content: flex-end;
+}
+.au.space-between,
+[data-au~="space-between"]{
+	justify-content: space-between;
+}
+.au.space-around,
+[data-au~="space-around"]{
+	justify-content: space-around;
+}
+
+/* text alignment styles */
+.au.text-right,
+[data-au~="text-right"]{
+	text-align:right;
+}
+.au.text-left,
+[data-au~="text-left"]{
+	text-align:left;
+}
+.au.text-center,
+[data-au~="text-center"]{
+	text-align:center;
+}
+
+/* center everything */
+.au.all-center,
+[data-au~="all-center"]{
+  align-items:center;
+  justify-content:center;
+}
+
+/* *********************** */
+/* *********************** */
+
+/* flex items */
+.au.flex-width,
+[data-au~="flex-width"]{
+  flex:auto;
+  width:100%;
+}
+.au.flex-height,
+[data-au~="flex-height"]{
+  flex:auto;
+  height:100%;
+}
+.au.set-width,
+[data-au~="set-width"],
+.au.set-height,
+[data-au~="set-height"],
+[data-au~="set"]{
+  flex:none;
+}
+
+/* align self styles */
+.au.align-self-top,
+[data-au~="align-self-top"]{
+	align-self:flex-start;
+}
+.au.align-self-bottom,
+[data-au~="align-self-bottom"]{
+	align-self:flex-end;
+}
+/* *********************** */
+/* *********************** */
+/* <END> AURUM FLEX STYLES */
+/* *********************** */
+/* *********************** */
+
