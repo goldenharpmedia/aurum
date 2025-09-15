@@ -1,0 +1,111 @@
+/* <BEGIN> AURUM CSS NORMALIZE */
+
+/* page elements */
+html{
+	scroll-behavior: smooth;
+}
+body{
+	cursor:default;
+}
+/* *********************** */
+/* *********************** */
+
+
+/* native elements */
+svg{
+  width:100%;
+  height:100%;
+	fill:currentColor;
+}
+p{
+  text-wrap:pretty;
+}
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* code */
+pre,
+code,
+.code-text{
+  font-family:monospace;
+}
+code{
+  padding:0 5px;
+  white-space: nowrap;
+  border-radius:2px;
+}
+pre code{
+  display:block;
+  padding: 20px;
+  line-height:1.1;
+  white-space: break-spaces;
+  overflow:auto;
+}
+
+:placeholder{
+  color:rgba(255,255,255,.5);
+}
+::-webkit-input-placeholder{
+  color:rgba(255,255,255,.5);
+}
+::-moz-placeholder{
+  color:rgba(255,255,255,.5);
+}
+
+/* universal classes */
+.hide,
+[hidden]{
+  display:none;
+}
+.show{
+  display:block;
+}
+.show.au.flex-container,
+.show[data-au~="flex-container"],
+.show[data-au~="container"]{
+  display:flex;
+}
+
+.clickable{
+  cursor:pointer;
+}
+.no-click{
+	pointer-events:none;
+}
+s,
+del,
+.strikethru{
+  text-decoration: line-through;
+  /* you were doing too much duu */
+  /* display:inline-block;
+  position:relative; */
+}
+/* line that creates the strikethru */
+/* .strikethru:after{
+  content: "";
+  display: block;
+  width: 120%;
+  height: .25em;
+  background-color: currentColor;
+  position: absolute;
+  top: .5em;
+  left: -10%;
+} */
+
+.sr-only{
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  white-space:nowrap;
+  border:0;
+}
+/* *********************** */
+/* *********************** */
+/* <END> AURUM CSS NORMALIZE */
+/* *********************** */
+/* *********************** */
