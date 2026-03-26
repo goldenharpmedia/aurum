@@ -1,4 +1,5 @@
 # The Aurum Framework
+Bloat-less Tailwind for `flex` veterans.
 
 The lightest, most necessary CSS Framework known to ~~man~~ humans. No pre-determined styles, no components - just flex layouts, grids, and necessary styles everyone needs (or could sure use). Perfect for those who are new to CSS Flexbox and learning the ropes, CSS veterans that are tired of constantly writing `display: flex`, and even those that just want a vanilla foundation to build their CSS on.
 
@@ -12,7 +13,7 @@ If you would like to contribute to Aurum, please fork the `main` branch, make yo
 
 NOTE: This repository is for the framework itself. This framework is hosted as part of the Aurum website (`root` of this repo correlates to [au.goldenharpmedia.com/framework](https://au.goldenharpmedia.com/framework)). To make contributions to the Aurum website, please visit the [Aurum Website repository](https://github.com/goldenharpmedia/aurum-website).
 
-## Setting Up
+## Using the framework
 
 Simply fork this repo to include your own version in your project (and to make changes if you wish), or reference one of the following URLs to access it as a hosted resource:
 
@@ -40,11 +41,11 @@ We recommend using the combination file for minimal requests and faster load tim
 
 <br>
 
-## How it Works
+### How it Works
 
 The *Reset* works automatically on page load, but *Flex* styles need to be referenced for each element.
 
-### Flex Styles
+#### Flex Styles
 
 Flex styles can be used within your project in two ways. One is by referencing a flex class, while another is by using a custom HTML attribute (in case you are already dealing with plenty of CSS classes).
 
