@@ -2,6 +2,9 @@
 
 ## [1.2.0] - 2026-06-30
 - feat!: version build/deploy process standardized to use git tags in release
+
+## [1.1.1] - 2025-01-01
+- Historical release — see git log for details
 - Update README for clarity
 - fix: create combined Aurum css v1.1.1 file
 - feat: create Aurum v1.1.1
@@ -39,6 +42,3 @@
 - feat: include Reset and Flex CSS
 - Update README.md
 - Initial commit
-
-## [1.1.1] - 2025-01-01
-- Historical release — see git log for details

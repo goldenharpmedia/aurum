@@ -1,3 +1,4 @@
+# DEPRECATE; utilize release script for version releases; convert to 11ty and utilize built-in features to create webpage based off of README.md
 import markdown
 from pathlib import Path
 
