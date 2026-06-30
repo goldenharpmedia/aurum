@@ -11,6 +11,8 @@ Aurum is from the latin word for gold (you may be familiar with the symbol 'Au' 
 
 If you would like to contribute to Aurum, please fork the `main` branch, make your changes, and then create a pull request to merge the new branch into `main`. All changes will be reviewed by our team, so be sure to review before submitting.
 
+Releases are managed via git tags. Each version is built into its own `packages/vX.X.X/` folder. Do not edit files inside `packages/` directly — source files live in `src/`.
+
 NOTE: This repository is for the framework itself. This framework is hosted as part of the Aurum website (`root` of this repo correlates to [au.goldenharpmedia.com/framework](https://au.goldenharpmedia.com/framework)). To make contributions to the Aurum website, please visit the [Aurum Website repository](https://github.com/goldenharpmedia/aurum-website).
 
 ## Using the framework
@@ -21,16 +23,16 @@ Simply fork this repo to include your own version in your project (and to make c
 <head>
 
   <!-- just the CSS Reset -->
-  <link rel="stylesheet" type="text/css" href="https://au.goldenharpmedia.com/framework/packages/v1.0/au.reset.css">
+  <link rel="stylesheet" type="text/css" href="https://au.goldenharpmedia.com/framework/packages/v1.2.0/au.reset.css">
 
   <!-- just the CSS Normalize Styles -->
-  <link rel="stylesheet" type="text/css" href="https://au.goldenharpmedia.com/framework/packages/v1.0/au.reset.css">
+  <link rel="stylesheet" type="text/css" href="https://au.goldenharpmedia.com/framework/packages/v1.2.0/au.normalize.css">
 
   <!-- just the Flex Styles -->
-  <link rel="stylesheet" type="text/css" href="https://au.goldenharpmedia.com/framework/packages/v1.0/au.flex.css">
+  <link rel="stylesheet" type="text/css" href="https://au.goldenharpmedia.com/framework/packages/v1.2.0/au.flex.css">
 
   <!-- all files above (one file limits request!) -->
-  <link rel="stylesheet" type="text/css" href="https://au.goldenharpmedia.com/framework/packages/v1.0/au.css">
+  <link rel="stylesheet" type="text/css" href="https://au.goldenharpmedia.com/framework/packages/v1.2.0/au.css">
 
   <!-- other links -->
 
@@ -63,7 +65,7 @@ Flex styles can be used within your project in two ways. One is by referencing a
 </div>
 ```
 
-For a full list of selectors that can be used, please see the `au.flex.css` [file](./packages/1.0/au.flex.css).
+For a full list of selectors that can be used, please see the `au.flex.css` [file](./packages/v1.2.0/au.flex.css).
 
 #### Grid Styles are planned, TBA.
 
