@@ -2,12 +2,31 @@
   "name": "aurum-css",
   "version": "1.2.0",
   "description": "Lightweight CSS utility framework using data-au attributes.",
+  "style": "dist/au.css",
+  "exports": {
+    ".": "./dist/au.css",
+    "./css": "./dist/au.css",
+    "./reset": "./dist/au.reset.css",
+    "./normalize": "./dist/au.normalize.css",
+    "./flex": "./dist/au.flex.css",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "lib",
+    "packages"
+  ],
   "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve",
     "release": "node scripts/release.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/goldenharpmedia/aurum.git"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.5"
+  }
 }

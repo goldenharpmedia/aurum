@@ -11,13 +11,28 @@ Aurum is from the latin word for gold (you may be familiar with the symbol 'Au' 
 
 If you would like to contribute to Aurum, please fork the `main` branch, make your changes, and then create a pull request to merge the new branch into `main`. All changes will be reviewed by our team, so be sure to review before submitting.
 
-Releases are managed via git tags. Each version is built into its own `packages/vX.X.X/` folder. Do not edit files inside `packages/` directly — source files live in `src/`.
+Source lives in `lib/` (`au.reset.css`, `au.normalize.css`, `au.flex.css`). Commit your edits, then run `pnpm run release <patch|minor|major>` — it bumps the version, builds two things from `lib/`, updates this changelog, commits, tags, and pushes:
+
+- **`dist/`** — always the latest release. This is what `npm` / `github:` installs consume, and what the promo page links.
+- **`packages/vX.X.X/`** — a permanent, per-version archive, served over the CDN.
+
+Both are generated — never edit `dist/` or `packages/` by hand.
 
 NOTE: This repository is for the framework itself. This framework is hosted as part of the Aurum website (`root` of this repo correlates to [au.goldenharpmedia.com/framework](https://au.goldenharpmedia.com/framework)). To make contributions to the Aurum website, please visit the [Aurum Website repository](https://github.com/goldenharpmedia/aurum-website).
 
 ## Using the framework
 
-Simply fork this repo to include your own version in your project (and to make changes if you wish), or reference one of the following URLs to access it as a hosted resource:
+### As a package (npm / pnpm / yarn)
+
+```
+npm install github:goldenharpmedia/aurum
+```
+
+Point your build at `node_modules/aurum-css/dist/au.css` — or the individual `dist/au.reset.css` / `dist/au.normalize.css` / `dist/au.flex.css`. `dist/` always tracks the latest release; pin a specific one with `github:goldenharpmedia/aurum#v1.2.0`.
+
+### As a hosted resource (CDN)
+
+Reference a versioned URL directly (replace `v1.2.0` with the latest — see [Releases](https://github.com/goldenharpmedia/aurum/releases)):
 
 ```
 <head>
@@ -39,7 +54,7 @@ Simply fork this repo to include your own version in your project (and to make c
 </head>
 ```
 
-We recommend using the combination file for minimal requests and faster load times. We also recommend including these links at the top of your `<head>` section (or at least, before other CSS) so your CSS isn't overwritten.
+We recommend the combined file for minimal requests, and putting these links at the top of your `<head>` (or at least before your own CSS) so nothing gets overwritten.
 
 <br>
 
@@ -65,7 +80,7 @@ Flex styles can be used within your project in two ways. One is by referencing a
 </div>
 ```
 
-For a full list of selectors that can be used, please see the `au.flex.css` [file](./packages/v1.2.0/au.flex.css).
+For a full list of selectors that can be used, please see the `au.flex.css` [source file](./lib/au.flex.css).
 
 #### Grid Styles are planned, TBA.
 

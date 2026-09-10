@@ -1,24 +1,41 @@
-# push site to prod server on main commit/merge
+# Build the promo page + framework with 11ty, then deploy to prod over SFTP.
+# _site/ contains index.html plus passthrough copies of packages/, dist/ and
+# src/, so every existing au.goldenharpmedia.com/framework/... URL still resolves.
 
 on:
   push:
     branches:
       - main
-name: Deploy website (prod) over SFTP
+name: Deploy framework site (prod) over SFTP
 jobs:
   deploy_job:
-    name: Deploy
+    name: Build & Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v4
 
-    - name: Deploy file(s)
-      uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-      with:
-        server: ${{ secrets.sftp_server }}
-        username: ${{ secrets.sftp_username }}
-        password: ${{ secrets.sftp_password }}
-        port: 22
-        local_path: './*'
-        remote_path: ${{ secrets.sftp_remote_path_prod }}
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build site
+        run: pnpm build
+
+      - name: Deploy file(s)
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          server: ${{ secrets.sftp_server }}
+          username: ${{ secrets.sftp_username }}
+          password: ${{ secrets.sftp_password }}
+          port: 22
+          local_path: './_site/*'
+          remote_path: ${{ secrets.sftp_remote_path_prod }}
