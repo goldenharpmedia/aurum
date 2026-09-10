@@ -28,7 +28,7 @@ NOTE: This repository is for the framework itself. This framework is hosted as p
 npm install github:goldenharpmedia/aurum
 ```
 
-Point your build at `node_modules/aurum-css/dist/au.css` — or the individual `dist/au.reset.css` / `dist/au.normalize.css` / `dist/au.flex.css`. `dist/` always tracks the latest release; pin a specific one with `github:goldenharpmedia/aurum#v1.2.0`.
+This installs as `@goldenharpmedia/aurum`. Point your build at `node_modules/@goldenharpmedia/aurum/dist/au.css` — or the individual `dist/au.reset.css` / `dist/au.normalize.css` / `dist/au.flex.css`. `dist/` always tracks the latest release; pin a specific one with `github:goldenharpmedia/aurum#v1.3.0`.
 
 ### As a hosted resource (CDN)
 
