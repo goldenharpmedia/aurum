@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.3.0] - 2026-09-10
+- docs: remove minor comment
+
 ## [1.2.1] - 2026-09-10
 - feat!: implement standardized build and push process (same/similar to web-ui)
 - feat: add xxsmall sizing; add quick "stack" selector for commonly used combination of attributes
