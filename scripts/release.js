@@ -1,5 +1,5 @@
-// Full release in one shot — mirrors the web-ui flow.
-// Commit your lib/ edits first, then:
+// Full release in one shot mirrors the web-ui flow.
+// Commit edits first, then:
 //
 //   > pnpm run release patch|minor|major
 //
