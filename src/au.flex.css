@@ -1,6 +1,7 @@
 /* <BEGIN> AURUM FLEX STYLES */
 :root{
   /* Aurum spacing variables */
+  --space-xxsmall:0.25em;
   --space-xsmall:0.5rem;
   --space-small:1rem;
   --space-medium:2rem;
@@ -8,6 +9,8 @@
   --space-xlarge:6rem;
 }
 
+/* *********************** */
+/* *********************** */
 /* flex container (parent of flex items) */
 .au.flex-container,
 [data-au~="flex-container"],
@@ -15,6 +18,7 @@
   display:flex;
   flex-direction:row;
 }
+/* flex direction */
 .au.flex-vertical,
 [data-au~="flex-vertical"],
 [data-au~="dir-vertical"]{
@@ -33,7 +37,9 @@
 
 /* align styles */
 .au.align-top,
-[data-au~="align-top"]{
+[data-au~="align-top"],
+.au.align-start,
+[data-au~="align-start"]{
   align-items: flex-start;
 }
 .au.align-center,
@@ -85,7 +91,7 @@
 	text-align:center;
 }
 
-/* center everything */
+/* center everything inside */
 .au.all-center,
 [data-au~="all-center"]{
   align-items:center;
@@ -93,6 +99,10 @@
 }
 
 /* spacing styles */
+.au.xxsmall-gap,
+[data-au~="xxsmall-gap"]{
+  gap:var(--space-xxsmall);
+}
 .au.xsmall-gap,
 [data-au~="xsmall-gap"]{
   gap:var(--space-xsmall);
@@ -114,9 +124,35 @@
   gap:var(--space-xlarge);
 }
 
+/* complete selectors (commonly used combinations to define the container) */
+.au.stack,
+[data-au~="stack"]{
+  display:flex;
+  flex-direction: column;
+}
+.au.stack-small,
+[data-au~="stack-small"]{
+  display:flex;
+  flex-direction: column;
+  gap:var(--space-small);
+}
+.au.stack-medium,
+[data-au~="stack-medium"]{
+  display:flex;
+  flex-direction: column;
+  gap:var(--space-medium);
+}
+.au.stack-large,
+[data-au~="stack-large"]{
+  display:flex;
+  flex-direction: column;
+  gap:var(--space-large);
+}
 /* *********************** */
 /* *********************** */
 
+/* *********************** */
+/* *********************** */
 /* flex items (children of flex container) */
 .au.flex-width,
 [data-au~="flex-width"]{
