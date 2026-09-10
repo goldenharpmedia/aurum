@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.1] - 2026-09-10
+- feat!: implement standardized build and push process (same/similar to web-ui)
+- feat: add xxsmall sizing; add quick "stack" selector for commonly used combination of attributes
+- fix: add balanced text wrapping to normalized headers
+- docs: update README to account for new build process
+- fix: add gitignore to limit git log pollution
+- docs: include notes on new release process
+
 ## [1.2.0] - 2026-06-30
 - feat!: version build/deploy process standardized to use git tags in release
 

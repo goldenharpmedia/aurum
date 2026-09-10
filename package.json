@@ -1,6 +1,6 @@
 {
   "name": "aurum-css",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Lightweight CSS utility framework using data-au attributes.",
   "style": "dist/au.css",
   "exports": {
