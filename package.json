@@ -1,6 +1,6 @@
 {
   "name": "@goldenharpmedia/aurum",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Lightweight CSS utility framework using data-au attributes.",
   "style": "dist/au.css",
   "exports": {

@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.3.1] - 2026-09-10
+- fix: update package to prepend with company name
+
 ## [1.3.0] - 2026-09-10
 - docs: remove minor comment
 
